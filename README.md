@@ -1,17 +1,26 @@
 # Event-aware and Diffusion prior: Cross-modal Spatio-Temporal Fusion for Efficient Video Deblurring
 
-#### Abstract
+## Abstract
 Recovering high quality clear video from highly blurred video is a challenging task. In recent years, event-based solutions and flow-guided approaches have made significant progress in the field of video deblurring. However, the error introduced by optical flow estimation and the modal difference between event information and images limit the deblurring capability of these methods. For this reason, we propose a new approach for video deblurring. We use a diffusion model to generate a priori features with bootstrapping and combine them with event information for video deblurring. First, we propose an attention module and feedforward network that combines event information and a priori features for deblurring a single frame. Then, we introduce an event-guided dynamic feature fusion module to adaptively fuse features from neighboring frames. Furthermore, we restrict the diffusion process to a highly compact space to reduce the computational burden. Experiments on synthetic and real datasets demonstrate that our method outperforms state-of-the-art methods.
 
-![Deblurring Network](./figs/Network-Models.png)
+## Framework
+![Deblurring Network](./figs/Network.png)
 
-![Traing and Inference framework](./figs/Train-Inference.png)
+![Traing and Inference framework](./figs/Training.png)
 
-![Qualitative evaluation on the GOPRO dataset](./figs/GOPRO-table.png)
+## Qualitative evaluation
+### GOPRO dataset
+![Qualitative evaluation on the GOPRO dataset](./figs/GOPROTable.png)
 
-![Qualitative evaluation on the HighREV and REVD datasets](./figs/HighREV-REVD-table.png)
+## Deblurring results
+### GOPRO dataset
+![Deblurring results on the GOPRO dataset](./figs/GOPRO.png)
 
-![Deblurring results on the GOPRO, HighREV, and REVD datasets](./figs/Deblurring-show.png)
+### HighREV dataset
+![Deblurring results on the HighREV dataset](./figs/HighREV.png)
+
+### REVD dataset
+![Deblurring results on the REVD dataset](./figs/REVD.png)
 
 # Get Started
 
